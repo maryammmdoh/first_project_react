@@ -7,22 +7,15 @@
 }
 
 .navbar-shrink {
-    padding-top: 10px !important;
     padding-bottom: 10px !important;
     box-shadow: 0 4px 16px rgba(30, 30, 30, 0.08);
 }
 
-.navbar-brand,
-.navbar-brand:focus {
+.navbar-brand {
     color: white !important;
     font-weight: 700;
-    font-size: 32px;
     text-transform: uppercase;
     transition: font-size 0.3s;
-}
-
-.navbar-shrink .navbar-brand {
-    font-size: 22px !important;
 }
 
 .navbar-nav .nav-link {
