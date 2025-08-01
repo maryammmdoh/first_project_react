@@ -5,20 +5,16 @@ import second from "../assets/port2.png";
 import third from "../assets/port3.png";
 
 function Portofolio() {
-  useEffect(() => {
-    document.title = "Portfolio";
-  }, []);
 
   const [imgSrc, setImgSrc] = useState("");
   const [isLayerVisible, setIsLayerVisible] = useState(false);
 
   function display(src) {
     setImgSrc(src);
-    setIsLayerVisible(true);
   }
 
   function hideLayer() {
-    setIsLayerVisible(false);
+    setImgSrc("");
   }
 
   const images = [first, second, third, first, second, third];
@@ -58,7 +54,7 @@ function Portofolio() {
 
 
       {/* Modal Layer */}
-      {isLayerVisible ? (
+      {imgSrc ? (
         <div
           className="modal fade show d-block"
           onClick={hideLayer}

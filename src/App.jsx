@@ -4,6 +4,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Portofolio from './components/Portofolio'
 import Contact from './components/Contact'
+import NotFound from './components/NotFound'
 
 
 const router = createBrowserRouter([
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/portofolio", element: <Portofolio /> },
       { path: "/contact", element: <Contact /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);

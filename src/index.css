@@ -225,41 +225,18 @@
     }
 
     .custom-input {
-        border-bottom: 2px solid #eee;
-        /* border-radius: 0; */
-        /* background: transparent; */
-        /* font-size: 1.1rem; */
-        color: #2c3e50;
-        box-shadow: none !important;
-        padding-left: 0;
-        padding-right: 0;
-        height: 56px;
+        border-bottom: 2px solid;
         transition: border-color 0.2s;
     }
 
     .custom-input:focus {
-        border-bottom: 2.5px solid #1abc9c;
-        background: transparent;
+        border-bottom: 3px solid #1abc9c;
     }
 
     .contact-form {
         max-width: 700px;
     }
 
-    .form-control {
-        border-radius: 8px;
-        background: #f9f9f9;
-        height: 55px;
-        box-shadow: none;
-        font-size: 17px;
-        color: #2c3e50;
-        transition: box-shadow 0.2s;
-    }
-
-    .form-control:focus {
-        box-shadow: 0 0 0 2px #1abc9c22;
-        background: #f4f4f4;
-    }
 
     .contact-btn {
         background: #1abc9c !important;
@@ -277,4 +254,45 @@
         background: #159b86 !important;
         color: #fff !important;
     }
+
+    .floating-input-group {
+        position: relative;
+        margin-bottom: 32px;
+    }
+
+    .floating-input {
+        width: 100%;
+        padding: 18px 12px 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: white;
+        box-sizing: border-box;
+        
+    }
+
+    .floating-input:focus {
+        border-color: #159b86;
+        outline: none;
+    }
+
+    .floating-input-group label {
+        position: absolute;
+        top: 20px;
+        left: 12px;
+        color: #999;
+        font-size: 16px;
+        padding: 0 4px;
+        transition: 0.2s all;
+        pointer-events: none;
+    }
+
+    .floating-input:not(:placeholder-shown)+label {
+        top: -10px;
+        left: 10px;
+        background-color: white;
+        font-size: 13px;
+        color: #159b86;
+    }
+
 }
